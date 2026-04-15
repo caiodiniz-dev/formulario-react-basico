@@ -6,7 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
 
 type FormData = {
-  subject: string
+  name: string
   date: string
   subject: string
   description: string
@@ -28,7 +28,7 @@ export default function App() {
     formState: { errors },
   } = useForm<FormData>({
     defaultValues: {
-      subject: "",
+      name: "",
       date: "",
       subject: "",
       description: ""
